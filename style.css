@@ -72,12 +72,35 @@ body, html {
     outline: black;
 }
 
-.line{
+.line {
     position: absolute;
-    width: 300px;
-    height: 0px;
-    left: -20px;
-    border-radius: 10px;
+    width: 0;
+    height: 0;
+    left: 50%; /* Start from the middle */
     top: 180px;
-    border: 3.7px solid #fffeff;
+    border-radius: 10px;
+    border: 3.7px solid #fff;
+    animation: expandLine 5s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes expandLine {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 150px; /* Expand to both sides equally */
+        left: calc(50% - 75px); /* Adjust left position */
+    }
+    100% {
+        width: 300px; /* Expand to the full length */
+        left: calc(50% - 150px); /* Adjust left position */
+    }
+}
+
+.main-line p {
+    position: relative;
+    top: -30px; /* Adjust as needed to move the paragraph up */
+    font-family: 'Dancing Script', cursive; /* Apply 'Dancing Script' font */
+    color: #fff; /* Set text color */
+    font-size: 24px; /* Set font size */
 }
