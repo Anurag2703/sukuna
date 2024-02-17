@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0; /* Align the navbar to the right side */
+    /* font-weight: bold; */
+    padding: 20px;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Align items to the end (right) */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar a.logo {
+    color: white;
+    margin-right: 700px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox layout */
+}
+
+.navbar-item {
+    margin-left: 20px; /* Add margin between navbar items */
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: filter 0.3s ease; /* Add transition effect */
+}
+
+.blur {
+    filter: blur(5px); /* Apply blur effect */
+}
+
+
+/* Main Line */
+.main-line {
+    position: absolute;
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the element */
+    text-align: center; /* Align text center */
+}
+
+.main-line h1 {
+    font-size: 100px; /* Set font size to large */
+    font-weight: bold; /* Make text bold */
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    outline: black;
+}
+
+.line{
+    position: absolute;
+    width: 300px;
+    height: 0px;
+    left: -20px;
+    border-radius: 10px;
+    top: 180px;
+    border: 3.7px solid #fffeff;
+}
